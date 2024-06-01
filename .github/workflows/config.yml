@@ -1,13 +1,13 @@
-name: Run Cypress()
-on: [push]
+name: Cypress Tests
+
+on: push
+
 jobs:
-    cypress-run:
+  cypress-run:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v4
-
-    - name: Cypress Execution
-        uses: cypress-io/github-action@v6
         
+      - name: Cypress Execution
+        uses: cypress-io/github-action@v6
