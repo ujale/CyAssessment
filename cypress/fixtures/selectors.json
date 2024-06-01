@@ -1,0 +1,27 @@
+{
+  "firstNameField": "#travname",
+  "lastNameField": "#travlastname",
+  "dob": "#dob",
+  "monthDropdown": ".ui-datepicker-month",
+  "yearDropdown": ".ui-datepicker-year",
+  "day": "tr:nth-of-type(3) > td:nth-of-type(2) > .ui-state-default",
+  "femaleSexRadio": "p#sex_field > span > input:nth-of-type(2)",
+  "onewayTripType": "#traveltype_1",
+  "originField": "#fromcity",
+  "destinationField": "#tocity",
+  "departDate": "#departon",
+  "nextBtn": ".ui-icon.ui-icon-circle-triangle-e",
+  "phoneNumField": "#billing_phone",
+  "emailField": "#billing_email",
+  "countryField": "span#select2-billing_country-container",
+  "zambiaElement": "ul#select2-billing_country-results > li:nth-of-type(248)",
+  "addressField": "#billing_address_1",
+  "cityField": "#billing_city",
+  "stateField": "span#select2-billing_state-container",
+  "searchBox": "input[role='combobox']",
+  "postalCodeField": "#billing_postcode",
+  "orderTable": ".shop_table",
+  "paystackRadioBtn": "#payment_method_paypal",
+  "orderBtn": "#place_order"
+
+}
