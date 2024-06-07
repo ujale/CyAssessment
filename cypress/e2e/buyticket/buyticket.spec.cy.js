@@ -6,6 +6,7 @@ before(() => {
     cy.fixture('selectors').then(sel => {
         data = sel
     })
+	cy.visit('https://www.dummyticket.com/')
 })
 
 

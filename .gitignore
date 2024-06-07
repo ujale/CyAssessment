@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 reports/
 results
+screenshots/
+log/
+npm_install_debug.log

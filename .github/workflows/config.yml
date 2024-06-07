@@ -1,13 +1,21 @@
-name: Run Cypress()
-on: [push]
+name: Cypress Tests
+
+on: push
+
 jobs:
-    cypress-run:
+  cypress-run:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v4
-
-    - name: Cypress Execution
-        uses: cypress-io/github-action@v6
         
+      - name: Cypress Execution
+        uses: cypress-io/github-action@v6
+
+      - name: 'BrowserStack Env Setup'
+        uses: 'browserstack/github-actions/setup-env@master'
+        with:
+          username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+      - run: npm i
+      - run: npx browserstack-cypress run
